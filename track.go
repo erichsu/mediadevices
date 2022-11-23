@@ -271,6 +271,13 @@ readLoop:
 }
 
 func (track *baseTrack) unbind(ctx webrtc.TrackLocalContext) error {
+	defer func() {
+		if recover() != nil {
+			// The return result can be altered
+			// in a defer function call.
+			fmt.Println("Oh shit 2 !")
+		}
+	}()
 	ch := track.removeActivePeerConnection(ctx.ID())
 	// If there isn't a registered chanel for this ctx, it means it has already been unbound
 	if ch == nil {
