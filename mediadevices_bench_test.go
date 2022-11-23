@@ -1,3 +1,4 @@
+//go:build e2e
 // +build e2e
 
 package mediadevices
@@ -7,8 +8,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/pion/mediadevices/pkg/codec/x264"
-	"github.com/pion/mediadevices/pkg/frame"
+	"github.com/erichsu/mediadevices/pkg/codec/x264"
+	"github.com/erichsu/mediadevices/pkg/frame"
 )
 
 type mockVideoSource struct {

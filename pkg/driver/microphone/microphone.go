@@ -10,12 +10,12 @@ import (
 	"time"
 	"unsafe"
 
+	"github.com/erichsu/mediadevices/internal/logging"
+	"github.com/erichsu/mediadevices/pkg/driver"
+	"github.com/erichsu/mediadevices/pkg/io/audio"
+	"github.com/erichsu/mediadevices/pkg/prop"
+	"github.com/erichsu/mediadevices/pkg/wave"
 	"github.com/gen2brain/malgo"
-	"github.com/pion/mediadevices/internal/logging"
-	"github.com/pion/mediadevices/pkg/driver"
-	"github.com/pion/mediadevices/pkg/io/audio"
-	"github.com/pion/mediadevices/pkg/prop"
-	"github.com/pion/mediadevices/pkg/wave"
 )
 
 const (

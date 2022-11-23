@@ -4,10 +4,10 @@ import (
 	"image"
 	"testing"
 
-	"github.com/pion/mediadevices/pkg/codec"
-	"github.com/pion/mediadevices/pkg/codec/internal/codectest"
-	"github.com/pion/mediadevices/pkg/frame"
-	"github.com/pion/mediadevices/pkg/prop"
+	"github.com/erichsu/mediadevices/pkg/codec"
+	"github.com/erichsu/mediadevices/pkg/codec/internal/codectest"
+	"github.com/erichsu/mediadevices/pkg/frame"
+	"github.com/erichsu/mediadevices/pkg/prop"
 )
 
 func TestShouldImplementBitRateControl(t *testing.T) {

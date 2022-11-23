@@ -4,7 +4,7 @@
 package vaapi
 
 import (
-	"github.com/pion/mediadevices/pkg/codec"
+	"github.com/erichsu/mediadevices/pkg/codec"
 	"testing"
 )
 

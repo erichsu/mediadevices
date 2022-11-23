@@ -1,3 +1,4 @@
+//go:build !linux
 // +build !linux
 
 package screen
@@ -7,11 +8,11 @@ import (
 	"image"
 	"io"
 
+	"github.com/erichsu/mediadevices/pkg/driver"
+	"github.com/erichsu/mediadevices/pkg/frame"
+	"github.com/erichsu/mediadevices/pkg/io/video"
+	"github.com/erichsu/mediadevices/pkg/prop"
 	"github.com/kbinani/screenshot"
-	"github.com/pion/mediadevices/pkg/driver"
-	"github.com/pion/mediadevices/pkg/frame"
-	"github.com/pion/mediadevices/pkg/io/video"
-	"github.com/pion/mediadevices/pkg/prop"
 )
 
 type screen struct {

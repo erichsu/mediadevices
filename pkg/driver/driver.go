@@ -1,9 +1,9 @@
 package driver
 
 import (
-	"github.com/pion/mediadevices/pkg/io/audio"
-	"github.com/pion/mediadevices/pkg/io/video"
-	"github.com/pion/mediadevices/pkg/prop"
+	"github.com/erichsu/mediadevices/pkg/io/audio"
+	"github.com/erichsu/mediadevices/pkg/io/video"
+	"github.com/erichsu/mediadevices/pkg/prop"
 )
 
 type VideoRecorder interface {
